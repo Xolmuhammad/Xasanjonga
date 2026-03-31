@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerHouse - Mazali tezkor taomlar</title>
+
+    {% include 'components/_scripts_and_styles.html' %}
+
+</head>
+
+<body class="bg-dark-900 text-slate-50 font-outfit antialiased selection:bg-primary-500 selection:text-white">
+
+    {% block navbar %}
+    <!-- Navbar -->
+    {% include 'components/_navbar.html' %}
+    {% endblock navbar %}
+
+    {% block hero %}
+    <!-- Hero Section -->
+    {% include 'components/_hero.html' %}
+    {% endblock hero %}
+
+    {% block main %}
+    Hello World
+    {% endblock main %}
+
+
+    {% block footer %}
+    <!-- Footer -->
+    {% include 'layout/footer.html' %}
+    {% endblock footer %}
+</body>
+
+</html>
